@@ -3,16 +3,15 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A test job
+    name: Testing BYOB
     steps:
       - uses: actions/checkout@v1
-      - name: Get date
-        id: date
-        run: echo "##[set-output name=date;]$(date)"
+      - id: data
+        run: echo "##[set-output name=data;]$(hostname)"
       - name: Shit
-        uses: RubbaBoy/BYOB@v1.0.0-SNAPSHOT.1
+        uses: RubbaBoy/BYOB@v1.0.0-SNAPSHOT.2
         with:
           NAME: first
           LABEL: huh
-          STATUS: ${{ steps.date.outputs.date }}
+          STATUS: ${{ steps.data.outputs.data }}
           COLOR: 00EEFF
