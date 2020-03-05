@@ -9,7 +9,7 @@ jobs:
       - id: data
         run: echo "##[set-output name=data;]$(hostname)"
       - name: Stuff
-        uses: RubbaBoy/BYOB@v1.0.0-SNAPSHOT.4
+        uses: RubbaBoy/BYOB@v1.0.0-SNAPSHOT.5
         with:
           NAME: first
           LABEL: huh
