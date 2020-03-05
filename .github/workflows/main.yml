@@ -6,10 +6,13 @@ jobs:
     name: A test job
     steps:
       - uses: actions/checkout@v1
+#      - name: Get date
+#        id: date
+#        run: echo "##[set-output name=date;]$(date)"
       - name: Shit
         uses: RubbaBoy/BYOB@v1.0.0-SNAPSHOT.1
         with:
           NAME: first
           LABEL: huh
-          STATUS: ${{ date }}
+          STATUS: $(date)
           COLOR: 00EEFF
