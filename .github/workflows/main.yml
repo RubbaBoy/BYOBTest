@@ -5,11 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Testing BYOB
     steps:
-      - uses: actions/checkout@v1
       - id: data
         run: echo "##[set-output name=data;]$(hostname)"
       - name: Stuff
-        uses: RubbaBoy/BYOB@v1.0.0-SNAPSHOT.13
+        uses: RubbaBoy/BYOB@v1.0.0-SNAPSHOT.14
         with:
           NAME: first
           LABEL: huh
