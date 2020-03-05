@@ -4,5 +4,5 @@ A test of the [BYOB](https://github.com/RubbaBoy/BYOB) (Bring Your Own Badge) Gi
 
 ![Time](https://badgen.net/https/runkit.io/rubbaboy/byob/branches/master/RubbaBoy/BYOBTest/time?cache=300)
 
-![Time](https://badgen.net/https/runkit.io/rubbaboy/byob/branches/master/RubbaBoy/BYOBTest/time?cache=300)
+![Time](https://badgen.net/https/runkit.io/rubbaboy/byob/branches/master/RubbaBoy/BYOBTest/machine?cache=300)
 
