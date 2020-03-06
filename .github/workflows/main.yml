@@ -10,7 +10,7 @@ jobs:
       - id: machine
         run: echo "##[set-output name=data;]$(hostname)"
       - id: size
-        run: echo "##[set-output name=data;]$(du -sh . | sed 's/[\\s|.]//g')"
+        run: echo "##[set-output name=data;]$(du -sh . | sed 's/[^0-9a-zA-Z]//g')"
       - name: Time badge
         uses: RubbaBoy/BYOB@v1.1.0-SNAPSHOT.4
         with:

@@ -4,5 +4,6 @@ A test of the [BYOB](https://github.com/RubbaBoy/BYOB) (Bring Your Own Badge) Gi
 
 ![Time](https://runkit.io/rubbaboy/byob/branches/master/RubbaBoy/BYOBTest/time)
 
-![Time](https://runkit.io/rubbaboy/byob/branches/master/RubbaBoy/BYOBTest/machine)
+![Machine](https://runkit.io/rubbaboy/byob/branches/master/RubbaBoy/BYOBTest/machine)
 
+![Size](https://runkit.io/rubbaboy/byob/branches/master/RubbaBoy/BYOBTest/size)
