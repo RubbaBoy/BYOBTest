@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  shield_job:
+  badge_job:
     runs-on: ubuntu-latest
     name: Testing BYOB
     steps:
@@ -12,7 +12,7 @@ jobs:
       - id: size
         run: echo "##[set-output name=data;]$(du -sh . | sed 's/[^0-9a-zA-Z]//g')"
       - name: Time badge
-        uses: RubbaBoy/BYOB@v1.1.0-SNAPSHOT.10
+        uses: RubbaBoy/BYOB@v1.1.0
         with:
           NAME: time
           LABEL: 'Updated at'
@@ -20,7 +20,7 @@ jobs:
           COLOR: 00EEFF
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Machine Badge
-        uses: RubbaBoy/BYOB@v1.1.0-SNAPSHOT.10
+        uses: RubbaBoy/BYOB@v1.1.0
         with:
           NAME: machine
           LABEL: 'Hostname'
@@ -28,7 +28,7 @@ jobs:
           COLOR: FFC0CB
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Size Badge
-        uses: RubbaBoy/BYOB@v1.1.0-SNAPSHOT.10
+        uses: RubbaBoy/BYOB@v1.1.0
         with:
           NAME: size
           LABEL: 'Repo Size'
