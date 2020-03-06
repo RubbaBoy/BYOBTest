@@ -9,6 +9,8 @@ jobs:
         run: echo "##[set-output name=data;]$(date)"
       - id: machine
         run: echo "##[set-output name=data;]$(hostname)"
+      - id: size
+        run: echo "##[set-output name=data;]$(du -sh . | sed 's/[\\s|.]//g')"
       - name: Time badge
         uses: RubbaBoy/BYOB@v1.1.0-SNAPSHOT.2
         with:
@@ -24,4 +26,12 @@ jobs:
           LABEL: 'Hostname'
           STATUS: ${{ steps.machine.outputs.data }}
           COLOR: FFC0CB
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Size Badge
+        uses: RubbaBoy/BYOB@v1.1.0-SNAPSHOT.2
+        with:
+          NAME: size
+          LABEL: 'Repo Size'
+          STATUS: ${{ steps.size.outputs.data }}
+          COLOR: 00FF00
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
