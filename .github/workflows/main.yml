@@ -60,3 +60,11 @@ jobs:
           STATUS: 'Custom Icons'
           COLOR: red
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Inline Icon
+        uses: RubbaBoy/BYOB@v1.2.0-SNAPSHOT
+        with:
+          NAME: custom_inline
+          ICON: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iI0YwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMiAyMS4zNWwtMS40NS0xLjMyQzUuNCAxNS4zNiAyIDEyLjI4IDIgOC41IDIgNS40MiA0LjQyIDMgNy41IDNjMS43NCAwIDMuNDEuODEgNC41IDIuMDlDMTMuMDkgMy44MSAxNC43NiAzIDE2LjUgMyAxOS41OCAzIDIyIDUuNDIgMjIgOC41YzAgMy43OC0zLjQgNi44Ni04LjU1IDExLjU0TDEyIDIxLjM1eiIvPjwvc3ZnPg=='
+          STATUS: 'Inline Base64 Icons'
+          COLOR: blue
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
