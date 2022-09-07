@@ -68,3 +68,11 @@ jobs:
           STATUS: 'Inline Base64 Icons'
           COLOR: blue
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Emoji Icon
+        uses: RubbaBoy/BYOB@v1.3.0
+        with:
+          NAME: emoji
+          ICON: '😀'
+          STATUS: 'Inline Base64 Icons'
+          COLOR: purple
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
