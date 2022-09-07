@@ -72,7 +72,7 @@ jobs:
         uses: RubbaBoy/BYOB@v1.3.0
         with:
           NAME: emoji
-          ICON: '😀'
-          STATUS: 'Inline Base64 Icons'
+          ICON: '😎'
+          STATUS: 'Emojis'
           COLOR: purple
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

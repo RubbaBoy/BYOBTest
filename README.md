@@ -15,3 +15,5 @@ A test of the [BYOB](https://github.com/RubbaBoy/BYOB) (Bring Your Own Badge) Gi
 ![Custom](https://byob.yarr.is/RubbaBoy/BYOBTest/custom)
 
 ![Custom Inline](https://byob.yarr.is/RubbaBoy/BYOBTest/custom_inline)
+
+![Emoji](https://byob.yarr.is/RubbaBoy/BYOBTest/emoji)
